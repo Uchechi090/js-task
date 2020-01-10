@@ -1,7 +1,8 @@
 import React from 'react';
 import logo from './logo.svg';
-import nodes from './nodes';
+// import nodes from './nodes';
 import './App.css';
+import TreeRoot from "./components/TreeRoot";
 
 const App = () => (
   <div className="App">
@@ -11,7 +12,7 @@ const App = () => (
     </header>
     <main className="App-main">
       <h1>Node Picker Assignment</h1>
-      <h2>Requirements</h2>
+      {/* <h2>Requirements</h2>
       <ul>
         <li>A list of Nodes, each with a reference to their parent, should be displayed hierarchically</li>
         <li>The user should be able to select nodes</li>
@@ -44,7 +45,8 @@ const App = () => (
       
       <p>
         Good luck and please don't hesitate to ask if anything is unclear!
-      </p>
+      </p> */}
+      <TreeRoot />
     </main>
   </div>
 )
