@@ -14,11 +14,10 @@ describe("Tree class component", () => {
 });
 
 describe("Get parent nodes", () => {
-    let wrapper;
     let mockSubmit;
     beforeEach(() => {
         mockSubmit = jest.fn();
-        wrapper = shallow(<Tree submit={mockSubmit} />);
+        let wrapper = shallow(<Tree submit={mockSubmit} />);
     })
     test("it should filter an array", () => {
         const input = [
