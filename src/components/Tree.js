@@ -36,7 +36,7 @@ class Tree extends Component {
         nodes[node.id].isOpen = !node.isOpen;
         this.setState({ nodes });
 
-        this.check(node.id);
+        //this.check(node.id);
         // this.uncheck(node.id);
     }
 

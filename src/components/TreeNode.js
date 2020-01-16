@@ -36,7 +36,7 @@ const TreeNode = (props) => {
     return (
         <>
             <StyledTreeNode level={level}>
-                {/* <input type="checkbox" name={node.name} value={node.id}/> */}
+                <input type="checkbox" name={node.name} value={node.id}/>
                 <NodeCaret onClick={() => toggleNode(node)}>
                     {node.isOpen ? <FaCaretDown /> : <FaCaretRight />}
                 </NodeCaret>
