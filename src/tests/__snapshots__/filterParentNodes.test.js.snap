@@ -1,0 +1,142 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Tree class component it should make a snapshot test 1`] = `
+<div>
+  <div
+    className="sc-bdVaJa nuEzZ"
+  >
+    <input
+      onClick={[Function]}
+      type="checkbox"
+    />
+    <div
+      className="sc-bwzfXH cczQhJ"
+      onClick={[Function]}
+    >
+      <svg
+        fill="currentColor"
+        height="1em"
+        stroke="currentColor"
+        strokeWidth="0"
+        style={
+          Object {
+            "color": undefined,
+          }
+        }
+        viewBox="0 0 192 512"
+        width="1em"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M0 384.662V127.338c0-17.818 21.543-26.741 34.142-14.142l128.662 128.662c7.81 7.81 7.81 20.474 0 28.284L34.142 398.804C21.543 411.404 0 402.48 0 384.662z"
+        />
+      </svg>
+    </div>
+    <span>
+      aaa
+    </span>
+  </div>
+  <div
+    className="sc-bdVaJa nuEzZ"
+  >
+    <input
+      onClick={[Function]}
+      type="checkbox"
+    />
+    <div
+      className="sc-bwzfXH cczQhJ"
+      onClick={[Function]}
+    >
+      <svg
+        fill="currentColor"
+        height="1em"
+        stroke="currentColor"
+        strokeWidth="0"
+        style={
+          Object {
+            "color": undefined,
+          }
+        }
+        viewBox="0 0 192 512"
+        width="1em"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M0 384.662V127.338c0-17.818 21.543-26.741 34.142-14.142l128.662 128.662c7.81 7.81 7.81 20.474 0 28.284L34.142 398.804C21.543 411.404 0 402.48 0 384.662z"
+        />
+      </svg>
+    </div>
+    <span>
+      ddd
+    </span>
+  </div>
+  <div
+    className="sc-bdVaJa nuEzZ"
+  >
+    <input
+      onClick={[Function]}
+      type="checkbox"
+    />
+    <div
+      className="sc-bwzfXH cczQhJ"
+      onClick={[Function]}
+    >
+      <svg
+        fill="currentColor"
+        height="1em"
+        stroke="currentColor"
+        strokeWidth="0"
+        style={
+          Object {
+            "color": undefined,
+          }
+        }
+        viewBox="0 0 192 512"
+        width="1em"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M0 384.662V127.338c0-17.818 21.543-26.741 34.142-14.142l128.662 128.662c7.81 7.81 7.81 20.474 0 28.284L34.142 398.804C21.543 411.404 0 402.48 0 384.662z"
+        />
+      </svg>
+    </div>
+    <span>
+      hhh
+    </span>
+  </div>
+  <div
+    className="sc-bdVaJa nuEzZ"
+  >
+    <input
+      onClick={[Function]}
+      type="checkbox"
+    />
+    <div
+      className="sc-bwzfXH cczQhJ"
+      onClick={[Function]}
+    >
+      <svg
+        fill="currentColor"
+        height="1em"
+        stroke="currentColor"
+        strokeWidth="0"
+        style={
+          Object {
+            "color": undefined,
+          }
+        }
+        viewBox="0 0 192 512"
+        width="1em"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M0 384.662V127.338c0-17.818 21.543-26.741 34.142-14.142l128.662 128.662c7.81 7.81 7.81 20.474 0 28.284L34.142 398.804C21.543 411.404 0 402.48 0 384.662z"
+        />
+      </svg>
+    </div>
+    <span>
+      rrr
+    </span>
+  </div>
+</div>
+`;
