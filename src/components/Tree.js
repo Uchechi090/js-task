@@ -23,21 +23,10 @@ class Tree extends Component {
     return nodes.filter(node => node.parent === parentNodeId);
   };
 
-  check = id => {
-    document.getElementById(id).checked = true;
-  };
-
-  // uncheck = (id) => {
-  //     document.getElementById(id).checked = false;
-  // }
-
   toggleNode = node => {
     const { nodes } = this.state;
     nodes[node.id].isOpen = !node.isOpen;
     this.setState({ nodes });
-
-    //this.check(node.id);
-    // this.uncheck(node.id);
   };
 
   onChange = data => {
