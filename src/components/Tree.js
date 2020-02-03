@@ -9,8 +9,7 @@ class Tree extends Component {
     super(props);
 
     this.state = {
-      nodes: data,
-      data: ""
+      nodes: data
     };
   }
 
@@ -30,15 +29,37 @@ class Tree extends Component {
   };
 
   onChange = data => {
-    console.log(data);
+    const nodeData = this.state.data;
+    nodeData.push(data);
+    console.log(nodeData);
   };
 
-  nodeSelect = node => {
-    data.forEach((_, key) => {
-      if (data[key].name === node.name) data[key].checked = !node.checked;
+  nodeSelect = (checked, node) => {
+    const { nodes } = this.state;
+    const children = [...this.getChildNodes(node.id)];
+    if (children && children.length > 0) {
+      children.forEach(c => this.nodeSelect(checked, c));
+    }
+
+    const target = nodes.find(n => n.id === node.id);
+    target.checked = checked;
+    this.setState(state => {
+      const newNodes = nodes.map(n => {
+        if (n.id === node.id) {
+          return {
+            ...n,
+            checked
+          };
+        }
+        return {
+          ...n
+        };
+      });
+      return {
+        ...state,
+        nodes: newNodes
+      };
     });
-    this.setState([...data]);
-    this.onChange(data);
   };
 
   render() {
@@ -54,8 +75,7 @@ class Tree extends Component {
             node={node}
             getChildNodes={this.getChildNodes}
             toggleNode={this.toggleNode}
-            onClick={() => this.nodeSelect(node)}
-            onChange={this.onChange}
+            onChange={this.nodeSelect}
             // level={0}
           />
         ))}

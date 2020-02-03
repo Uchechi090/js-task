@@ -12,7 +12,7 @@ const App = () => (
     </header>
     <main className="App-main">
       <h1>Node Picker Assignment</h1>
-      <h2>Requirements</h2>
+      {/* <h2>Requirements</h2>
       <ul>
         <li>
           A list of Nodes, each with a reference to their parent, should be
@@ -46,7 +46,7 @@ const App = () => (
         <code>{JSON.stringify(nodes, null, 2)}</code>
       </pre>
 
-      <p>Good luck and please don't hesitate to ask if anything is unclear!</p>
+      <p>Good luck and please don't hesitate to ask if anything is unclear!</p> */}
       <TreeRoot />
     </main>
   </div>

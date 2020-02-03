@@ -46,7 +46,7 @@ const TreeNode = props => {
           readOnly
           type="checkbox"
           checked={node.checked}
-          onChange={onChange}
+          onChange={(e) => onChange(e.target.checked, node)}
         />
 
         <NodeCaret onClick={() => toggleNode(node)}>
@@ -63,6 +63,8 @@ const TreeNode = props => {
             key={childNode.id}
             node={childNode}
             level={level + 1}
+            parentNode={node}
+            checked={node.checked}
           />
         ))}
     </>
